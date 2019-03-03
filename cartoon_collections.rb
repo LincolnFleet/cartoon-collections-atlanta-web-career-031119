@@ -24,23 +24,23 @@ end
 #   return found_it
 # end
 
-# def find_the_cheese(array)
-#   cheese_types = ["cheddar", "gouda", "camembert"]
-#   array.find {|sniff| sniff=="cheddar"||"gouda"||"camembert"}
-# end
-
 def find_the_cheese(array)
-  array.each do |item|
-    if item == "cheddar"
-      return item
-    elsif item == "gouda"
-      return item
-    elsif item == "camembert"
-      return item
-    end
-  end
-  return nil
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find {|sniff| sniff=="cheddar"||sniff=="gouda"||sniff=="camembert"}
 end
+
+# def find_the_cheese(array)
+#   array.each do |item|
+#     if item == "cheddar"
+#       return item
+#     elsif item == "gouda"
+#       return item
+#     elsif item == "camembert"
+#       return item
+#     end
+#   end
+#   return nil
+# end
 
 this_shit_doesnt_work = ".find"
 so_i_cheated_the_lesson = "not sorry"
